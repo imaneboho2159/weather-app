@@ -1,0 +1,9 @@
+.input-group{
+        width: 65%;
+
+}body{
+    background-color: #C0EDFF;
+
+}.input-group button:hover{
+    color: black;
+}
