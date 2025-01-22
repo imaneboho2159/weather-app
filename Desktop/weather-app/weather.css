@@ -7,3 +7,12 @@
 }.input-group button:hover{
     color: black;
 }
+.cloudy {
+    width: 244px;
+}.pt-5 {
+    padding-top: 11rem !important;
+}.air{
+    width: 29px;
+}.pt-5 p{
+    padding-left: 40px;
+}
