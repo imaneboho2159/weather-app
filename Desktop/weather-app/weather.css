@@ -2,12 +2,13 @@
         width: 65%;
 
 }body{
-    background-color: #C0EDFF;
+    background-color:  #46b7e3 ;
+    
 
 }.input-group button:hover{
     color: black;
 }
-.cloudy {
+#cloudy {
     width: 244px;
 }.pt-5 {
     padding-top: 11rem !important;
@@ -16,17 +17,20 @@
 }.pt-5 p{
     padding-left: 40px;
 }
-.card-imag1{
+#card-imag1{
     width: 103px;
 }
-.card-imag2{
+#card-imag2{
     width: 103px;
-}.card-imag3{
+}#card-imag3{
     width: 103px;
-}.card-imag4{
+}#card-imag4{
     width: 103px;
-}.card-imag5{
+}#card-imag5{
     width: 103px;
-}.card-imag6{
+}#card-imag6{
     width: 103px;
+}
+.bground{
+    background-color: #05B2F6;
 }
