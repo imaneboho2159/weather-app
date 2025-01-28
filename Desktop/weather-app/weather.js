@@ -48,17 +48,25 @@ function checkweather(apiUrl) {
     });
 }
 function updateWeatherImage(description) {
-    const weatherImage = document.getElementsByClassName('weatherImage');
+    const weatherImages = document.getElementsByClassName('weatherImage');
+    const imageSrc = getWeatherImageSrc(description);
+    
+    for (let i = 0; i < weatherImages.length; i++) {
+        weatherImages[i].src = imageSrc;
+    }
+}
+
+function getWeatherImageSrc(description) {
     if (description.includes('clear')) {
-        weatherImage.src = '/images/animated/day.svg';
+        return '/images/animated/day.svg';
     } else if (description.includes('clouds')) {
-        weatherImage.src = '/images/animated/cloudy-day-1.svg';
+        return '/images/animated/cloudy-day-1.svg';
     } else if (description.includes('rain')) {
-        weatherImage.src = '/images/animated/rainy-1.svg';
+        return '/images/animated/rainy-1.svg';
     } else if (description.includes('snow')) {
-        weatherImage.src = '/images/animated/snowy-2.svg';
+        return '/images/animated/snowy-2.svg';
     } else {
-        weatherImage.src = 'images/default.png';
+        return 'images/default.png';
     }
 }
 
