@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,102 +9,108 @@
     <link rel="stylesheet" href="weather.css">
     <title>Weather</title>
 </head>
+
 <body>
-  
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="input-group mb-3 mt-5">
-                <input type="text" class="form-control"  id= "city" placeholder="Enter city name" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary bg-light"  id="search-Btn" class="btn-search" type="button" ><i class="bi bi-search"  ></i></button>
-              </div>
+                    <input type="text" class="form-control" id="city" placeholder="Enter city name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary bg-light" id="search-Btn" class="btn-search" type="button"><i class="bi bi-search"  ></i></button>
+                </div>
             </div>
-    </div>
+        </div>
     </div>
     <div class="container" class="bg-colr">
         <div class="row">
             <div class="col-lg-8"></div>
             <div class="col-lg-2 pt-4">
-                <i class="bi bi-geo-alt  " ></i><span  id="localisation"></span>
+                <i class="bi bi-geo-alt  "></i><span id="localisation"></span>
             </div>
-            <div class="col-lg-2 pt-4" >
-               <span  id="date"></span>
+            <div class="col-lg-2 pt-4">
+                <span id="date"></span>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <img id="cloudy" >
+                <img id="cloudy"  class="weatherImage"   src="/images/animated/cloudy-day-2.svg">
             </div>
 
-            <div class="col-lg-5 pt-5" >
-                <span id="temperature"></span><h3 id="etat"></h3>
+            <div class="col-lg-5 pt-5">
+                <span id="temperature"></span>
+                <h3 id="etat"></h3>
             </div>
 
-            <div class="col-lg-2 pt-5" >
-                <img class="air" >
-                <span >Humidity</span><p  id="Humiditi"></p>
+            <div class="col-lg-2 pt-5">
+                <img class="air"    src="/images/windy.png">
+                <span>Humidity</span>
+                <p id="Humiditi"></p>
             </div>
 
-            <div class="col-lg-2 pt-5" >
-                <img class="air" >
-                <span  >Wind Speed</span><p id="sped"></p>
+            <div class="col-lg-2 pt-5">
+                <img class="air" src="/images/air.png">
+                <span>Wind Speed</span>
+                <p id="sped"></p>
             </div>
 
         </div>
     </div>
 
 
-    <div class="container" >
+    <div class="container">
         <div class="row">
             <div class="col-sm-3 pt-4 pb-4">
-              <div class="card" >
-                <div class="card-body" class="bground" >
-                  <h5 class="card-title"  id="day"></h5>
-                  <img id="card-imag1" >
-                  <p class="card-text"  id="temp"></p>
-                  
+                <div class="card">
+                    <div class="card-body" class="bground">
+                        <h5 class="card-title" id="day"></h5>
+                        <img id="card-imag1"    class="weatherImage" src="/images/animated/cloudy-day-1.svg">
+                        <p class="card-text" id="temp"></p>
+
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="col-sm-3 pt-4 pb-4">
-              <div class="card"  >
-                <div class="card-body" id="bground-">
-                  <h5 class="card-title" id="day-2"></h5>
-                  <img  id="card-imag2" >
-                  <p class="card-text"  id="temp-2"></p>
-                  
+                <div class="card">
+                    <div class="card-body" class="bground-1">
+                        <h5 class="card-title" id="day-2"></h5>
+                        <img id="card-imag2"    class="weatherImage" src="/images/animated/day.svg">
+                        <p class="card-text" id="temp-2"></p>
+
+                    </div>
                 </div>
-              </div>
             </div>
-        
+
             <div class="col-sm-3 pt-4 pb-4">
-                <div class="card" >
-                  <div class="card-body" id="bground-1" >
-                    <h5 class="card-title" id="day-3"></h5>
-                    <img id="card-imag3" >
-                    <p class="card-text" id="temp-3"></p>
-                    
-                  </div>
+                <div class="card">
+                    <div class="card-body" class="bground-">
+                        <h5 class="card-title" id="day-3"></h5>
+                        <img id="card-imag3"    class="weatherImage"src="/images/animated/rainy-1.svg">
+                        <p class="card-text" id="temp-3"></p>
+
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-3 pt-4 pb-4">
-                <div class="card" >
-                  <div class="card-body" id="bground-2" >
-                    <h5 class="card-title" id="day-4"></h5>
-                    
-                    <img id="card-imag4" >
-                    <p class="card-text" id="temp-4"></p>
-                    
-                  </div>
+            </div>
+            <div class="col-sm-3 pt-4 pb-4">
+                <div class="card">
+                    <div class="card-body" id="bground-2">
+                        <h5 class="card-title" id="day-4"></h5>
+
+                        <img id="card-imag4"   class="weatherImage" src="/images/animated/snowy-2.svg">
+                        <p class="card-text" id="temp-4"></p>
+
+                    </div>
                 </div>
-              </div>
-             
-              
-          </div>
+            </div>
+
+
         </div>
-        
-         <script src="weather.js"> </script> 
-      </body>
-        </html>
+    </div>
+
+    <script src="weather.js">
+    </script>
+</body>
+
+</html>

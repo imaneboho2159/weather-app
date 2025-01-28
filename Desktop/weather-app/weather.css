@@ -1,36 +1,140 @@
-.input-group{
-        width: 65%;
+.input-group {
+    width: 65%;
+}
 
-}body{
-    background-color:  #46b7e3 ;
-    
+body {
+    background-color: rgba(2, 112, 237, 0.3);
+}
 
-}.input-group button:hover{
+.input-group button:hover {
     color: black;
 }
+
 #cloudy {
     width: 244px;
-}.pt-5 {
+}
+
+.pt-5 {
     padding-top: 11rem !important;
-}.air{
+}
+
+.air {
     width: 29px;
-}.pt-5 p{
+}
+
+.pt-5 p {
     padding-left: 40px;
 }
-#card-imag1{
+
+#card-imag1 {
     width: 103px;
 }
-#card-imag2{
-    width: 103px;
-}#card-imag3{
-    width: 103px;
-}#card-imag4{
-    width: 103px;
-}#card-imag5{
-    width: 103px;
-}#card-imag6{
+
+#card-imag2 {
     width: 103px;
 }
-.bground{
-    background-color: #05B2F6;
+
+#card-imag3 {
+    width: 103px;
+}
+
+#card-imag4 {
+    width: 103px;
+}
+
+#card-imag5 {
+    width: 103px;
+}
+
+#card-imag6 {
+    width: 103px;
+}
+
+.card {
+    background: rgb(255, 255, 255, 0.3);
+}
+/* Media Queries for Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    .input-group {
+        width: 90%;
+    }
+    #cloudy {
+        width: 100%;
+        max-width: 220px;
+    }
+    .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-lg-12,
+    .col-lg-8,
+    .col-lg-2 {
+        flex: 1;
+        margin-bottom: 15px;
+    }
+    #temperature,
+    #etat {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #card-imag1,
+    #card-imag2,
+    #card-imag3,
+    #card-imag4 {
+        width: 70px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .col-sm-3 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .localisation {
+        font-weight: bold;
+    }
+    #date {
+        font-weight: bold;
+    }
+    .pt-4 {
+        font-weight: bold;
+        FONT-SIZE: x-large;
+    }
+    .pt-5 {
+        padding-top: 1.5rem !important;
+        padding-top: 1.5rem !important;
+        font-size: 120%;
+        font-weight: bold;
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .input-group {
+        width: 95%;
+    }
+    #temperature,
+    #etat {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #cloudy {
+        width: 100%;
+        max-width: 180px;
+    }
+    #card-imag1,
+    #card-imag2,
+    #card-imag3,
+    #card-imag4 {
+        width: 60px;
+    }
+    .pt-5 {
+        padding-top: 1.5rem !important;
+        padding-top: 1.5rem !important;
+        font-size: 120%;
+        font-weight: bold;
+        margin-left: 6%;
+    }
 }
